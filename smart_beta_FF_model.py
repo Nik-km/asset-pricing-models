@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import yfinance as yahooFinance
-from fredapi import Fred
-from sklearn.linear_model import LinearRegression
 import statsmodels.api as sm
 
 # Set path to working directory of this script file
@@ -58,8 +56,7 @@ y = df['excess_return']
 
 # Perform the regression
 model = sm.OLS(y, X).fit()
-regression_summary = model.summary()
-regression_summary
+model.summary()
 
 
 #%% Conclusion ------------------------------------------------------------------------------------
