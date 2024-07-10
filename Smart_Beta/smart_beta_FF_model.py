@@ -103,7 +103,7 @@ model.summary()
 
 #>> Is 20 years worth of monthly data enough?
 # Data Sufficiency: The 20 years of monthly data appear to be sufficient given the high adjusted R-squared value (0.894) and the statistical significance of several factors.
-#   > also need to consider any structural changes that might've occurred during the full time horizon which we're considering (from 2000-2020)
+#   > also need to consider any structural changes that might've occurred during the full time horizon which we're considering (from 1999-2024)
 
 
 #%% Notes -----------------------------------------------------------------------------------------
