@@ -60,6 +60,7 @@ print(model.summary().as_latex())
 model.summary()
 
 
+
 #%% Conclusion ------------------------------------------------------------------------------------
 #>> Does QQQ have alpha?
 # Alpha: QQQ has a statistically significant positive alpha, indicating it outperforms the Fama-French 5-factor model
@@ -84,12 +85,12 @@ model.summary()
 # 3. Size Factor (SMB)
 # Coefficient: -0.0007
 # p-value: 0.168
-# The coefficient for SMB is NOT statistically significant, indicating that QQQ tends to underperform when the size factor performs well, consistent with QQQ's growth-oriented profile.
+# The coefficient for SMB is NOT statistically significant, indicating that QQQ tends to underperform when the size factor performs well.
 
 # 4. Value Factor (HML)
 # Coefficient: -0.0047
 # p-value: 0.000
-# The coefficient for HML is negative & statistically significant, indicating that QQQ tends to underperform when the value factor performs well.
+# The coefficient for HML is negative & statistically significant, indicating that QQQ tends to underperform when the value factor performs well, consistent with QQQ's growth-oriented profile.
 
 # 5. Profitability Factor (RMW)
 # Coefficient: -0.0041
@@ -107,9 +108,6 @@ model.summary()
 
 
 #%% Notes -----------------------------------------------------------------------------------------
-# References:
-    # https://mortada.net/python-api-for-fred.html
-
 # Mkt_RF (Rm - Rf) is the return spread between the capitalization-weighted stock market and cash
 # SMB is the return spread of small minus large stocks (i.e. the size effect)
 # HML is the return spread of cheap minus expensive stocks (i.e. the value effect)
